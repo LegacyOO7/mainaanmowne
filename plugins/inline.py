@@ -103,9 +103,8 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [
-        [InlineKeyboardButton('🔎 SEARCH Again', switch_inline_query_current_chat=query)],
-        [InlineKeyboardButton('🔍Movies', switch_inline_query_current_chat=''),
-        InlineKeyboardButton('🔍Series', url='https://t.me/ProSearchXBot')],
+        [InlineKeyboardButton('🔍Movies', url='https://t.me/+5GqQY0tAqKRhYmVl')],
+        [InlineKeyboardButton('🔍Series', url='https://t.me/ProSearchXBot')],
         ]
     return InlineKeyboardMarkup(buttons)
 
