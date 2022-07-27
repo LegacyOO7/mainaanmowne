@@ -71,7 +71,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Results for your search"
+        switch_pm_text = f"{emoji.FILE_FOLDER}🔍 Results for your search"
         if string:
             switch_pm_text += f" for {string}"
         try:
@@ -103,8 +103,9 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [
+        [InlineKeyboardButton('🔎 SEARCH Again', switch_inline_query_current_chat=query)],
         [InlineKeyboardButton('🔍Movie Bots', url='https://t.me/+5GqQY0tAqKRhYmVl'),
-        InlineKeyboardButton('🔍Series Bot', url='https://t.me/ProSearchXBot')],
+        InlineKeyboardButton('🔍TVSeriesBOT', url='https://t.me/ProSearchXBot')],
         ]
     return InlineKeyboardMarkup(buttons)
 
